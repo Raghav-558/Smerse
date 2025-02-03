@@ -8,9 +8,16 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        lg: "1025px",
+        md: "770px",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "custom-black": "#0A0A2B80",
+        "light-purple": "#952FFE",
+        "light-pink": "#C641C6",
+        "light-orange": "#FF676B",
+        "dark-blue": "#0A0A2B",
       },
     },
   },
