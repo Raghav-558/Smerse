@@ -12,6 +12,10 @@ body {
   background-image: url("/assets/images/webp/hero-bg.webp");
 }
 
+.mobile-view{
+  background-image: url("/assets/images/webp/mobile-view-bg.webp");
+}
+
 .custom-gradient {
   background: linear-gradient(
     180deg,

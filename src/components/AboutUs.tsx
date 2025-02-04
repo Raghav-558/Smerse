@@ -31,8 +31,6 @@ const AboutUs = () => {
               alt="about-image"
               className="pointer-events-none"
             />
-            {/* <Image width={635} height={679} src='' alt="layer" />
-        <Image width={635} height={679} src='' alt="layer" /> */}
           </div>
         </div>
       </div>

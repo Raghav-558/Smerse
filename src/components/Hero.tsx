@@ -5,12 +5,10 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <div className="bg-hero bg-no-repeat bg-cover bg-center">
-        <div className="py-2 xl:py-4 bg-custom-black">
-          <Header />
-        </div>
+      <div className="bg-hero bg-no-repeat bg-cover max-sm:mobile-view bg-center pt-[100px] max-lg:pt-[84px] max-md:pt-14">
+        <Header />
         <div className="max-w-[1176px] mx-auto px-4">
-          <div className="flex items-center justify-center flex-col pt-[52px] max-lg:[79px]">
+          <div className="flex items-center justify-center flex-col pt-[52px] max-lg:pt-[79px] max-sm:pt-[113px]">
             <Image
               src="/assets/images/webp/hero-logo.webp"
               alt="hero-image"
@@ -19,14 +17,14 @@ const Hero = () => {
               className="pointer-events-none max-lg:w-[381px] max-md:w-[256px] max-md:h-[154px]"
             />
             <div className="relative">
-              <h1 className="pt-8 text-8xl font-black text-white tracking-[6px] relative z-10 leading-[120%] max-md:text-[40px] max-md:pt-10">
+              <h1 className="pt-8 max-sm:pt-[108px] text-8xl font-black text-white tracking-[6px] relative z-10 leading-[120%] max-md:text-[40px] max-md:pt-10">
                 SMERSE
               </h1>
-              <span className="absolute inset-0 text-8xl max-md:text-[40px] leading-[120%] font-black bg-gradient-to-t to-light-purple via-light-pink from-light-orange bg-clip-text text-transparent tracking-[6px] top-[23.5%] -translate-x-0.5 max-md:top-[46%] max-md:left-[0.5px]">
+              <span className="absolute inset-0 text-8xl max-md:text-[40px] leading-[120%] font-black bg-gradient-to-t to-light-purple via-light-pink from-light-orange bg-clip-text text-transparent tracking-[6px] top-[23.5%] -translate-x-0.5 max-md:top-[46%] max-md:left-[0.5px] max-sm:top-[70%]">
                 SMERSE
               </span>
             </div>
-            <p className="font-semibold text-4xl leading-[54px] tracking-[6%] text-white max-w-[637px] text-center pt-[10px] max-md:text-xl">
+            <p className="font-semibold text-4xl leading-[54px] tracking-[6%] text-white max-w-[637px] text-center pt-[10px] max-sm:pt-8 max-md:text-xl max-md:leading-[30px]">
               FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE
             </p>
             <div className="pt-11 max-sm:pt-[82px] max-md:pb-[85px] max-lg:pb-[105px] lg:pb-[50px]">
