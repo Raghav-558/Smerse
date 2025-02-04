@@ -5,7 +5,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <div className="bg-hero bg-no-repeat bg-cover max-sm:mobile-view bg-center pt-[100px] max-lg:pt-[84px] max-md:pt-14">
+      <div className="bg-hero bg-no-repeat bg-cover !max-sm:mobile-view bg-center pt-[100px] max-lg:pt-[84px] max-md:pt-14">
         <Header />
         <div className="max-w-[1176px] mx-auto px-4">
           <div className="flex items-center justify-center flex-col pt-[52px] max-lg:pt-[79px] max-sm:pt-[113px]">
