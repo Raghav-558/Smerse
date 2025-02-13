@@ -30,9 +30,9 @@ const Vision = () => {
                     myClass="leading-[27.2px] text-center"
                   />
                 </div>
-                <div className="size-24 max-sm:size-[86px] absolute rounded-full top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-gradient-to-b from-light-purple via-light-pink to-light-orange p-[1px]">
+                <div className="!size-24 max-sm:!size-[86px] absolute rounded-full top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-gradient-to-b from-light-purple via-light-pink to-light-orange p-[1px]">
                   <div className="w-full h-full rounded-full flex items-center justify-center bg-light-gray group-hover:bg-transparent">
-                    <CustomHeading text={item.number} />
+                    <CustomHeading text={item.number} myClass={"!text-[36px] max-lg:!text-5xl max-md:!text-[36px]"} spanClass={"!text-[36px] max-lg:!text-5xl max-md:!text-[36px]"}/>
                   </div>
                 </div>
               </div>

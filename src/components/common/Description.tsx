@@ -5,7 +5,7 @@ interface Descriptionprops {
 }
 const Description = ({ myClass, text }: Descriptionprops) => {
   return (
-    <p className={`${myClass} tracking-[6%] leading-6 text-white`}>
+    <p className={`${myClass} tracking-[6%] leading-6 text-white text-base `}>
       {text}
     </p>
   );

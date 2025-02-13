@@ -45,14 +45,14 @@ const Header = () => {
         scrolled ? "bg-black" : "bg-custom-black"
       }`}
     >
-      <div className="max-w-[1140px] max-md:px-4 max-lg:px-8 mx-auto flex items-center justify-between">
+      <div className="max-w-[1172px] px-4 max-md:px-4 max-lg:px-8 mx-auto flex items-center justify-between">
         <a href="/">
           <Image
             src="/assets/images/webp/page-logo.webp"
             alt="page-logo"
             width={68}
             height={68}
-            className="pointer-events-none size-[68px] max-md:size-10"
+            className="pointer-events-none size-[68px] max-lg:size-[76px] max-md:size-10"
           />
         </a>
         <div
@@ -75,14 +75,14 @@ const Header = () => {
           <div className="max-lg:hidden max-md:block">
             <button
               onClick={closeHandler}
-              className="!font-[800] text-lg leading-6 text-white py-[11px] max-md:text-base w-[148px] max-sm:w-[110px] !tracking-[6%] custom-gradient rounded-lg !shadow-[0px_4px_4px_0px_#ff676b33]"
+              className="!font-[800] text-lg leading-6 text-white py-[11px] max-md:text-base w-[148px] max-sm:w-[110px] !tracking-[6%] custom-gradient rounded-lg shadow-[0px_4px_4px_0px_#ff676b33]"
             >
               Mint Now
             </button>
           </div>
         </div>
         <div className="flex items-center gap-10 lg:hidden">
-          <button className="!font-[800] text-xl max-md:text-base leading-6 text-white py-[11px] w-[148px] max-sm:w-[110px] !tracking-[6%] custom-gradient rounded-lg !shadow-[0px_4px_4px_0px_#ff676b33] lg:hidden max-md:hidden">
+          <button className="!font-[800] text-xl max-md:text-base leading-6 text-white py-[11px] w-[148px] max-sm:w-[110px] !tracking-[6%] custom-gradient rounded-lg lg:hidden max-md:hidden shadow-[0px_4px_4px_0px_#ff676b33]">
             Mint Now
           </button>
           <button

@@ -20,6 +20,9 @@ export default {
         "dark-blue": "#0A0A2B",
         "light-gray": "#222240",
       },
+      boxShadow: {
+        "custom-shadow": "0px 0px 15.01px 0px #FFFFFF80",
+      },
     },
   },
   plugins: [],
