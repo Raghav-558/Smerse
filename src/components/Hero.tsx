@@ -5,9 +5,8 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <div id="home" className="bg-hero bg-no-repeat bg-cover !max-sm:mobile-view bg-center pt-[100px] max-lg:pt-[84px] max-md:pt-14 overflow-hidden">
+      <div id="home" className="bg-hero bg-no-repeat bg-cover sm:bg-center pt-[100px] max-lg:pt-[92px] max-md:pt-14 overflow-hidden">
         <Header />
-        
         <div className="max-w-[1172px] mx-auto px-4 max-lg:px-8 max-md:px-4 second-blur relative">
           <div className="relative pink-blur"></div>
           <div className="flex items-center justify-center flex-col pt-[52px] max-lg:pt-[79px] max-sm:pt-[113px]">
@@ -26,11 +25,11 @@ const Hero = () => {
                 SMERSE
               </span>
             </div>
-            <p className="font-semibold text-4xl leading-[54px] tracking-[6%] text-white max-w-[637px] text-center pt-[10px] max-sm:pt-8 max-md:text-xl max-md:leading-[30px]">
+            <p className="font-semibold text-4xl leading-[54px] tracking-[6%] text-white max-w-[637px] text-center pt-[10px] max-sm:pt-[27.15px] max-md:text-xl max-md:leading-[30px]">
               FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE
             </p>
             <div className="pt-11 max-sm:pt-[82px] max-md:pb-[85px] max-lg:pb-[105px] lg:pb-[50px]">
-              <button className="!font-[800] text-xl max-md:text-base leading-6 text-white h-[56px] w-[172px] max-md:w-[130px] max-md:h-[48px] max-sm:w-[134px] max-sm:h-[44px] !tracking-[6%] bg-gradient-to-t to-light-purple via-light-pink from-light-orange rounded-lg shadow-[0px_4px_4px_0px_#ff676b33] ">
+              <button className="!font-[800] text-xl max-md:text-base leading-6 text-white h-[56px] w-[172px] max-md:w-[130px] max-md:h-[48px] max-sm:w-[134px] max-sm:h-[44px] !tracking-[6%] bg-gradient-to-t to-light-purple via-light-pink from-light-orange rounded-lg shadow-[0px_4px_4px_0px_#ff676b33] hover:scale-[1.04] transition-all duration-300">
                 Get Started
               </button>
             </div>

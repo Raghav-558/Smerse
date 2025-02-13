@@ -15,7 +15,7 @@ const Vision = () => {
           {VISION_LIST.map((item, i) => (
             <div
               key={i}
-              className={`w-1/3 px-3 max-lg:px-4 max-lg:w-1/2 max-sm:w-full ${
+              className={`w-1/3 max-lg:px-4 max-lg:w-1/2 max-sm:w-full ${
                 i === 1
                   ? "max-sm:pt-[88px]"
                   : i === 2
@@ -24,15 +24,23 @@ const Vision = () => {
               }`}
             >
               <div className="relative bg-gradient-to-b cursor-pointer from-light-purple via-light-pink to-light-orange rounded-[10px] h-full !p-[1px] group">
-                <div className="rounded-[10px] px-7 max-sm:px-4 pt-[90px] !pb-8 h-[365px] bg-light-gray hover:bg-transparent">
+                <div className="rounded-[10px] px-7 max-sm:px-4 pt-[90px] !pb-8 h-[365px] bg-light-gray hover:bg-transparent transition-all duration-300">
                   <Description
                     text={item.description}
                     myClass="leading-[27.2px] text-center"
                   />
                 </div>
                 <div className="!size-24 max-sm:!size-[86px] absolute rounded-full top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-gradient-to-b from-light-purple via-light-pink to-light-orange p-[1px]">
-                  <div className="w-full h-full rounded-full flex items-center justify-center bg-light-gray group-hover:bg-transparent">
-                    <CustomHeading text={item.number} myClass={"!text-[36px] max-lg:!text-5xl max-md:!text-[36px]"} spanClass={"!text-[36px] max-lg:!text-5xl max-md:!text-[36px]"}/>
+                  <div className="w-full h-full rounded-full flex items-center justify-center bg-light-gray group-hover:bg-transparent transition-all duration-300">
+                    <CustomHeading
+                      text={item.number}
+                      myClass={
+                        "!text-[36px] max-lg:!text-5xl max-md:!text-[36px]"
+                      }
+                      spanClass={
+                        "!text-[36px] max-lg:!text-5xl max-md:!text-[36px]"
+                      }
+                    />
                   </div>
                 </div>
               </div>

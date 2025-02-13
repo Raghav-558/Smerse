@@ -6,7 +6,7 @@ import Description from "./common/Description";
 
 const AboutUs = () => {
   return (
-    <div className="pt-[150px] pb-[178px] max-lg:py-[96px] max-md:py-[60px]">
+    <div id="game" className="pt-[150px] pb-[178px] max-lg:py-[96px] max-md:py-[60px]">
       <div className="max-w-[1172px] px-4 mx-auto max-md:px-4 max-lg:px-8">
         <div className="flex items-center justify-between max-lg:justify-center max-lg:flex-wrap">
           <div>
@@ -20,7 +20,7 @@ const AboutUs = () => {
                 <div>{obj.icon}</div>
                 <Description
                   text={obj.description}
-                  myClass="lg:max-w-[480px] max-lg:pb-3 !tracking-[0px] pb-2"
+                  myClass="lg:max-w-[455px] max-lg:pb-3 pb-2"
                 />
               </div>
             ))}

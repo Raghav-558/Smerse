@@ -30,7 +30,7 @@ const Project = () => {
               alt="project-image"
               width={471}
               height={626}
-              className="max-xl:w-full max-w-[471px]"
+              className="max-xl:w-full max-w-[471px] pointer-events-none"
             />
           </div>
         </div>

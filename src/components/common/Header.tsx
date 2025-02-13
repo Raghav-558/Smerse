@@ -25,7 +25,7 @@ const Header = () => {
     };
 
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 750);
     };
 
     window.addEventListener("resize", handleOverflow);
@@ -75,14 +75,14 @@ const Header = () => {
           <div className="max-lg:hidden max-md:block">
             <button
               onClick={closeHandler}
-              className="!font-[800] text-lg leading-6 text-white py-[11px] max-md:text-base w-[148px] max-sm:w-[110px] !tracking-[6%] custom-gradient rounded-lg shadow-[0px_4px_4px_0px_#ff676b33]"
+              className="!font-[800] text-lg leading-6 text-white py-[11px] max-md:text-base w-[148px] max-sm:w-[110px] !tracking-[6%] custom-gradient rounded-lg shadow-[0px_4px_4px_0px_#ff676b33] hover:scale-[1.04] transition-all duration-300"
             >
               Mint Now
             </button>
           </div>
         </div>
         <div className="flex items-center gap-10 lg:hidden">
-          <button className="!font-[800] text-xl max-md:text-base leading-6 text-white py-[11px] w-[148px] max-sm:w-[110px] !tracking-[6%] custom-gradient rounded-lg lg:hidden max-md:hidden shadow-[0px_4px_4px_0px_#ff676b33]">
+          <button className="!font-[800] text-xl max-md:text-base leading-6 text-white py-[11px] w-[148px] max-sm:w-[110px] !tracking-[6%] custom-gradient rounded-lg lg:hidden max-md:hidden shadow-[0px_4px_4px_0px_#ff676b33] hover:scale-[1.04] transition-all duration-300">
             Mint Now
           </button>
           <button
