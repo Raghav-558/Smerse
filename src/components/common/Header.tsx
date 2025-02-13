@@ -45,7 +45,7 @@ const Header = () => {
         scrolled ? "bg-black" : "bg-custom-black"
       }`}
     >
-      <div className="max-w-[1176px] px-4 mx-auto flex items-center justify-between">
+      <div className="max-w-[1140px] max-md:px-4 max-lg:px-8 mx-auto flex items-center justify-between">
         <a href="/">
           <Image
             src="/assets/images/webp/page-logo.webp"

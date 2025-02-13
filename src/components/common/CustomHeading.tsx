@@ -1,31 +1,22 @@
 import React from "react";
-
-interface CustomHeadingProps {
-  textOne: string;
-  textTwo: string;
-  myClassOne?: string;
-  myClassTwo?: string;
+interface HeadingProps {
+  text: string;
+  myClass?: string;
+  spanClass?: string;
 }
 
-const CustomHeading: React.FC<CustomHeadingProps> = ({
-  textOne,
-  textTwo,
-  myClassOne,
-  myClassTwo,
-}) => {
+const CustomHeading = ({ text, myClass, spanClass }: HeadingProps) => {
   return (
-    <div className="relative">
-      <h1
-        className={`${myClassOne}  text-[48px] max-md:text-4xl max-md:leading-[43.2px] font-black text-white tracking-[6px] relative z-10 leading-[120%] max-md:text-[40px]`}
-      >
-        {textOne}
-      </h1>
+    <h2
+      className={`${myClass} font-black text-5xl leading-[57.6px] tracking-wider max-md:text-4xl max-md:leading-[43.2px] max-w-max bg-gradient-to-b from-light-purple via-light-pink to-light-orange bg-clip-text text-transparent relative`}
+    >
+      {text}
       <span
-        className={`${myClassTwo} absolute max-md:text-4xl max-md:leading-[43.2px] inset-0 text-[48px] leading-[120%] font-black bg-gradient-to-t to-light-purple via-light-pink from-light-orange bg-clip-text text-transparent tracking-[6px] max-md:tracking-[8px] -translate-x-0.5 max-md:-translate-x-[3px] max-md:top-[-2.5%] max-md:left-[3.5px]`}
+        className={`${spanClass} font-black absolute text-nowrap left-[1px] -top-[1px] text-5xl leading-[57.6px] tracking-wider max-md:text-4xl max-md:leading-[43.2px] text-white`}
       >
-        {textTwo}
+        {text}
       </span>
-    </div>
+    </h2>
   );
 };
 

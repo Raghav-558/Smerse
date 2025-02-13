@@ -4,15 +4,20 @@
 @tailwind utilities;
 
 body {
-  background-color: #0A0A2B;
+  background-color: #0a0a2b;
   font-family: "Lato", serif;
+}
+
+body,
+html {
+  scroll-behavior: smooth !important;
 }
 
 .bg-hero {
   background-image: url("/assets/images/webp/hero-bg.webp");
 }
 
-.mobile-view{
+.mobile-view {
   background-image: url("/assets/images/webp/mobile-view-bg.webp");
 }
 
@@ -23,4 +28,31 @@ body {
     #c641c6 44.39%,
     #ff676b 76.15%
   );
+}
+
+.pink-blur::before,
+.second-blur::before {
+  content: "";
+  position: absolute;
+  width: 164px;
+  height: 164px;
+  background: linear-gradient(
+    180deg,
+    #952ffe 10.3%,
+    #c641c6 44.39%,
+    #ff676b 76.15%
+  );
+  filter: blur(40px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.pink-blur::before {
+  top: 50px;
+  left: -50px;
+}
+
+.second-blur::before {
+  bottom: 0px;
+  right: -200px;
 }
